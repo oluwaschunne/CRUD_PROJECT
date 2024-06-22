@@ -33,6 +33,7 @@
             <td>{{ student.location }}</td>
             <td>{{ student.hobby }}</td>
             <td>
+                <a href="{% url 'student_info' student.pk %}">View</a>
                 <a href="{% url 'student_update' student.pk %}">Edit</a>
                 <a href="{% url 'student_delete' student.pk %}">Delete</a>
             </td>
