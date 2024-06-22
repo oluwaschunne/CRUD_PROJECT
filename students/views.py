@@ -21,7 +21,7 @@ def student_create(request):
             return redirect('student_list')
     else:
         form = StudentForm()
-    return render(request, 'students/student_form', {'form': form})
+    return render(request, 'students/student_form.html', {'form': form})
 
 # function to update student info
 def student_update(request, pk):
