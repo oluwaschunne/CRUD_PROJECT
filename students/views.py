@@ -17,7 +17,7 @@ def student_create(request):
     if request.method == "POST":
         form = StudentForm(request.POST)
         if form.is_valid():
-            form.save
+            form.save()
             return redirect('student_list')
     else:
         form = StudentForm()
